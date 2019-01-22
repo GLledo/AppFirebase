@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "651248704745",
+    "firebase_url": "https://agenciadeviajes-gon-jor.firebaseio.com",
+    "project_id": "agenciadeviajes-gon-jor",
+    "storage_bucket": "agenciadeviajes-gon-jor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:651248704745:android:38c6468b8763912a",
+        "android_client_info": {
+          "package_name": "com.example.gonza.appfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "651248704745-q45q11rar10lp5vdq6649j6iele3afmd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7jjrMNGpkGjPK-DS-c7HpNZ1yZ6olF68"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
