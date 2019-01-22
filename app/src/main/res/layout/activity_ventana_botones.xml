@@ -1,9 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="@dimen/pad_VentanaBotones"
     tools:context=".VentanaBotones">
 
-</android.support.constraint.ConstraintLayout>
+    <TextView
+        android:id="@+id/txtExplicacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:text="@string/txt_explicacion"
+        android:textAlignment="center"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnInsertar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtExplicacion"
+        android:layout_marginTop="27dp"
+        android:text="@string/btn_Insertar" />
+
+    <Button
+        android:id="@+id/btnModify"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnInsertar"
+        android:layout_marginTop="11dp"
+        android:text="@string/btn_Modify" />
+
+    <Button
+        android:id="@+id/btnConsultarTodos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnModify"
+        android:layout_marginTop="10dp"
+        android:text="@string/btn_ConsultarTodos" />
+
+    <Button
+        android:id="@+id/btnConsultar5Dias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnConsultarTodos"
+        android:layout_marginTop="10dp"
+        android:text="@string/btn_Consultar5Dias" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnConsultar5Dias"
+        android:layout_marginTop="10dp"
+        android:text="@string/btn_Salir" />
+</RelativeLayout>
