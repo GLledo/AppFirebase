@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+<<<<<<< HEAD
     <dimen name="pad_VentanaBotones">16dp</dimen>
+=======
+    <dimen name="padding">16dp</dimen>
+>>>>>>> master
 </resources>

@@ -1,9 +1,3 @@
 <resources>
     <string name="app_name">AppFirebase</string>
-    <string name="txt_explicacion">Bienvenido, aquí podrá realizar las siguientes tareas dispuestas en los botones.</string>
-    <string name="btn_Insertar">Insertar viaje</string>
-    <string name="btn_Modify">Modificar Viaje</string>
-    <string name="btn_ConsultarTodos">Consultar todos los viajes</string>
-    <string name="btn_Consultar5Dias">Consultar viajes de mas de 5 días.</string>
-    <string name="btn_Salir">Salir</string>
 </resources>
