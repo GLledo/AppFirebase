@@ -13,4 +13,11 @@
     <string name="toast_bienvenida">Intrduce un nombre de usuario para continuar</string>
     <string name="clave_nombre">nombre</string>
     <string name="btn_borrar">Eliminar viaje</string>
+    <string name="btn_crear_viaje">Crear Viaje</string>
+    <string name="txt_personaliza">Crear tu viaje deseado</string>
+    <string name="hint_nombre_viaje">Introduce  el nombre del viaje</string>
+    <string name="hint_pais">Introduce el pais</string>
+    <string name="hint_ciudad">Introduce la ciudad</string>
+    <string name="hint_precio">Introduce el precio</string>
+    <string name="hint_duracion">Introduce la duracion</string>
 </resources>

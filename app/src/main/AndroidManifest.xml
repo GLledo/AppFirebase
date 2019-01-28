@@ -17,7 +17,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ListaViaje"></activity>
+        <activity android:name=".ListaViaje" />
+        <activity android:name=".InsertarViaje"></activity>
     </application>
 
 </manifest>

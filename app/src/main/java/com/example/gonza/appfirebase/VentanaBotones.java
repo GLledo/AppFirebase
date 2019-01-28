@@ -1,5 +1,6 @@
 package com.example.gonza.appfirebase;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,6 +23,9 @@ public class VentanaBotones extends AppCompatActivity {
 
 
     public void insertarViaje(View view) {
+
+        Intent i = new Intent(this,InsertarViaje.class);
+        startActivity(i);
     }
 
     public void modificarViaje(View view) {
@@ -36,5 +40,6 @@ public class VentanaBotones extends AppCompatActivity {
     }
     public void salir(View view) {
 
+        finish();
     }
 }
