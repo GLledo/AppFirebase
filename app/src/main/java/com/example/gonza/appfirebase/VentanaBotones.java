@@ -9,8 +9,6 @@ public class VentanaBotones extends AppCompatActivity {
 
     TextView tvTexto;
     String nombre ;
-    String hola;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,18 +21,19 @@ public class VentanaBotones extends AppCompatActivity {
     }
 
 
-    public void InsertarViaje(View view) {
+    public void insertarViaje(View view) {
     }
 
-    public void ModificarViaje(View view) {
+    public void modificarViaje(View view) {
     }
 
-    public void ConsultarTodosLosViajes(View view) {
+    public void consultarTodosLosViajes(View view) {
     }
 
-    public void ConsultarViajes5Dias(View view) {
+    public void consultarViajes5Dias(View view) {
     }
-
+    public void eliminarViaje(View view) {
+    }
     public void salir(View view) {
     }
 }
