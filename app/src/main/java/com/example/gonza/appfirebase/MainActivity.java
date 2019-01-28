@@ -10,6 +10,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     EditText etUsuario;
+    MyApp myApp;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         etUsuario = findViewById(R.id.etUsuario);
-
+        myApp = (MyApp) getApplicationContext();
     }
 
     public void acceder(View v){
@@ -27,8 +28,9 @@ public class MainActivity extends AppCompatActivity {
         if (usuario.trim().equals("")){
             Toast.makeText(getBaseContext(),getString(R.string.toast_bienvenida),Toast.LENGTH_LONG).show();
         }else{
+            myApp.setNombre(usuario);
+
             Intent i = new Intent(this, VentanaBotones.class);
-            i.putExtra(getString(R.string.clave_nombre), usuario);
             startActivity(i);
         }
     }
