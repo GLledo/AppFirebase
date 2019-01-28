@@ -7,7 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.example.prueba.primerfirebase.R;
+import com.example.gonza.appfirebase.R;
 
 import java.util.ArrayList;
 
