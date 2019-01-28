@@ -6,17 +6,19 @@ public class Viaje {
     private int duracion;
     private String ciudad;
     private String pais;
+    private String remitente;
 
 
     public Viaje() {
     }
 
-    public Viaje(String destino, Double precio, int duracion, String ciudad, String pais) {
+    public Viaje(String destino, Double precio, int duracion, String ciudad, String pais, String remitente) {
         this.destino = destino;
         this.precio = precio;
         this.duracion = duracion;
         this.ciudad = ciudad;
         this.pais = pais;
+        this.remitente = remitente;
     }
 
     public String getDestino() {

@@ -32,6 +32,8 @@ public class VentanaBotones extends AppCompatActivity {
     }
 
     public void consultarTodosLosViajes(View view) {
+        Intent x = new Intent(this, ListaViaje.class);
+        startActivity(x);
     }
 
     public void consultarViajes5Dias(View view) {
