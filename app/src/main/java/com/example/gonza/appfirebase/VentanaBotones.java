@@ -35,5 +35,6 @@ public class VentanaBotones extends AppCompatActivity {
     public void eliminarViaje(View view) {
     }
     public void salir(View view) {
+
     }
 }

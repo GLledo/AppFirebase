@@ -14,9 +14,9 @@ import java.util.ArrayList;
 public class MensajeAdaptador
         extends RecyclerView.Adapter<MensajeAdaptador.MensajeViewHolder> {
 
-    private ArrayList<Mensaje> lista;
+    private ArrayList<Viaje> lista;
 
-    public MensajeAdaptador(ArrayList<Mensaje> lista) {
+    public MensajeAdaptador(ArrayList<Viaje> lista) {
         this.lista = lista;
     }
 
