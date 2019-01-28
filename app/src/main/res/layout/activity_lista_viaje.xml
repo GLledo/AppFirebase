@@ -7,12 +7,22 @@
     tools:context=".ListaViaje">
 
     <android.support.v7.widget.RecyclerView
+        android:id="@+id/recicledViewListaViajes"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
+        android:layout_marginTop="0dp"
         android:layout_marginEnd="0dp"
         android:layout_marginBottom="0dp"
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp" />
+
+    <Button
+        android:id="@+id/btnAtrasListaViajes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        android:text="@string/btn_AtrasListaViajes" />
 </RelativeLayout>

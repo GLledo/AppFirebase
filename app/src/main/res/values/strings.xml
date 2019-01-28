@@ -13,4 +13,5 @@
     <string name="toast_bienvenida">Intrduce un nombre de usuario para continuar</string>
     <string name="clave_nombre">nombre</string>
     <string name="btn_borrar">Eliminar viaje</string>
+    <string name="btn_AtrasListaViajes">Volver a atrás</string>
 </resources>
