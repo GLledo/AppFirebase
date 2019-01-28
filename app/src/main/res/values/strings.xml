@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">AppFirebase</string>
-    <string name="txt_explicacion">Bienvenido, aquí podrá realizar las siguientes tareas dispuestas en los botones.</string>
+    <string name="txt_explicacion">Bienvenido %1$s, aquí podrá realizar las siguientes tareas dispuestas en los botones.</string>
     <string name="btn_Insertar">Insertar viaje</string>
     <string name="btn_Modify">Modificar Viaje</string>
     <string name="btn_ConsultarTodos">Consultar todos los viajes</string>
@@ -10,4 +10,6 @@
     <string name="tv_bienvenida">Bienvenido a la mejor App para gestionar viajes</string>
     <string name="hint_usuario">Introduce tu nombre de usuario</string>
     <string name="btn_acceder">Acceder</string>
+    <string name="toast_bienvenida">Intrduce un nombre de usuario para continuar</string>
+    <string name="clave_nombre">nombre</string>
 </resources>
