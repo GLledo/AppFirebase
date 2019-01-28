@@ -12,4 +12,5 @@
     <string name="btn_acceder">Acceder</string>
     <string name="toast_bienvenida">Intrduce un nombre de usuario para continuar</string>
     <string name="clave_nombre">nombre</string>
+    <string name="btn_borrar">Eliminar viaje</string>
 </resources>
