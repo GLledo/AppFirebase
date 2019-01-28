@@ -7,4 +7,7 @@
     <string name="btn_Consultar5Dias">Consultar viajes de mas de 5 días.</string>
     <string name="btn_Salir">Salir</string>
     <string name="test1lalalalal">Salir</string>
+    <string name="tv_bienvenida">Bienvenido a la mejor App para gestionar viajes</string>
+    <string name="hint_usuario">Introduce tu nombre de usuario</string>
+    <string name="btn_acceder">Acceder</string>
 </resources>
