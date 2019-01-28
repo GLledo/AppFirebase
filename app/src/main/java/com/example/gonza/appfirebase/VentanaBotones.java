@@ -19,4 +19,20 @@ public class VentanaBotones extends AppCompatActivity {
         nombre = getIntent().getStringExtra(getString(R.string.clave_nombre));
         tvTexto.setText(String.format(getString(R.string.txt_explicacion),nombre));
     }
+
+
+    public void InsertarViaje(View view) {
+    }
+
+    public void ModificarViaje(View view) {
+    }
+
+    public void ConsultarTodosLosViajes(View view) {
+    }
+
+    public void ConsultarViajes5Dias(View view) {
+    }
+
+    public void salir(View view) {
+    }
 }

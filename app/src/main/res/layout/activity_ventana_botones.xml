@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/txtExplicacion"
         android:layout_marginTop="28dp"
+        android:onClick="InsertarViaje"
         android:text="@string/btn_Insertar" />
 
     <Button
@@ -33,6 +34,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnInsertar"
         android:layout_marginTop="11dp"
+        android:onClick="ModificarViaje"
         android:text="@string/btn_Modify" />
 
     <Button
@@ -41,6 +43,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnModify"
         android:layout_marginTop="10dp"
+        android:onClick="ConsultarTodosLosViajes"
         android:text="@string/btn_ConsultarTodos" />
 
     <Button
@@ -49,6 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnConsultarTodos"
         android:layout_marginTop="10dp"
+        android:onClick="ConsultarViajes5Dias"
         android:text="@string/btn_Consultar5Dias" />
 
     <Button
@@ -57,5 +61,6 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/btnConsultar5Dias"
         android:layout_marginTop="10dp"
+        android:onClick="salir"
         android:text="@string/btn_Salir" />
 </RelativeLayout>
