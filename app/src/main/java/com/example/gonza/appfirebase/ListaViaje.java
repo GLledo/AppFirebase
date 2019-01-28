@@ -57,7 +57,7 @@ public class ListaViaje extends AppCompatActivity {
         rvViajes.setAdapter(adapter);
         rvViajes.setItemAnimator(new DefaultItemAnimator());
 
-        dbR = FirebaseDatabase.getInstance().getReference().child("mensaje");
+        dbR = FirebaseDatabase.getInstance().getReference().child("viaje");
 
         addChildEventListener();
 
