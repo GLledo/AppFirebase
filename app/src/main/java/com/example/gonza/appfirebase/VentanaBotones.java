@@ -2,12 +2,14 @@ package com.example.gonza.appfirebase;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 public class VentanaBotones extends AppCompatActivity {
 
     TextView tvTexto;
-    String nombre;
+    String nombre ;
+    String hola;
 
 
     @Override
