@@ -40,18 +40,28 @@ public class MensajeAdaptador
     }
 
     public class MensajeViewHolder extends RecyclerView.ViewHolder {
-        TextView tvTexto;
-        TextView tvRmte;
+        TextView tvDestino;
+        TextView tvCiudad;
+        TextView tvPais;
+        TextView tvPrecio;
+        TextView tvDias;
+
 
         public MensajeViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvTexto = itemView.findViewById(R.id.tvTextoMsj);
-            tvRmte = itemView.findViewById(R.id.tvRemitente);
+            tvDestino = itemView.findViewById(R.id.tvTextoNombreViaje);
+            tvCiudad = itemView.findViewById(R.id.tvCiudad);
+            tvPais = itemView.findViewById(R.id.tvPais);
+            tvPrecio = itemView.findViewById(R.id.tvPrecio);
+            tvDias = itemView.findViewById(R.id.tvDias);
         }
 
-        public void bindMensaje(Mensaje m) {
-            tvTexto.setText(m.getTextoMsj());
-            tvRmte.setText(m.getRemitente());
+        public void bindMensaje(Viaje m) {
+            tvDestino.setText(m.getDestino());
+            tvCiudad.setText(m.getCiudad());
+            tvPais.setText(m.getPais());
+            tvPrecio.setText(String.valueOf(m.getPrecio()));
+            tvDias.setText(String.valueOf(m.getDuracion()));
         }
     }
 
