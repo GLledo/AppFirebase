@@ -7,10 +7,16 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class MainActivity extends AppCompatActivity {
 
     EditText etUsuario;
     MyApp myApp;
+
+    private FirebaseAuth mFirebaseAuth;
+    private FirebaseAuth.AuthStateListener mAuthStateListener;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "651248704745-scr8pa2pjig8h30lptl4eptrad30q9ui.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.gonza.appfirebase",
+            "certificate_hash": "9ca0593ce2a1d8d0460581bb33e5e99d03197211"
+          }
+        },
+        {
           "client_id": "651248704745-q45q11rar10lp5vdq6649j6iele3afmd.apps.googleusercontent.com",
           "client_type": 3
         }
@@ -29,8 +37,13 @@
           "status": 1
         },
         "appinvite_service": {
-          "status": 1,
-          "other_platform_oauth_client": []
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "651248704745-q45q11rar10lp5vdq6649j6iele3afmd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         },
         "ads_service": {
           "status": 2

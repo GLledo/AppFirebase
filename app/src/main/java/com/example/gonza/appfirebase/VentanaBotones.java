@@ -37,6 +37,12 @@ public class VentanaBotones extends AppCompatActivity {
     }
 
     public void consultarViajes5Dias(View view) {
+
+        Intent x = new Intent(this, ListaViaje.class);
+        x.putExtra("tipoFiltro","dias");
+        x.putExtra("filtro",5);
+        startActivity(x);
+
     }
     public void eliminarViaje(View view) {
     }

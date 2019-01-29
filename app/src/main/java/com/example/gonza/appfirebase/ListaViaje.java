@@ -43,6 +43,12 @@ public class ListaViaje extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_lista_viaje);
 
+        // RECOGEMOS EL FILTRO DE LA CONSULTA, DISEñADO PARA UNA AMPLICACIÓN
+        String tipoFiltro = getIntent().getStringExtra("tipoFiltro");
+        if(tipoFiltro.equals("dias")){
+            String dias = getIntent().getStringExtra("filtro");
+        }
+
         remitente = "ANONIMO";//TODO AQUI DEBERIA IR EL NOMBRE DEL QUE HA INICIADO LA APLICACION
 
       //  etMensaje = findViewById(R.id.etMensaje);
