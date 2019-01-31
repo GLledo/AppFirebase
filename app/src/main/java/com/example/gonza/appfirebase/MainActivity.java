@@ -14,9 +14,6 @@ public class MainActivity extends AppCompatActivity {
     EditText etUsuario;
     MyApp myApp;
 
-    private FirebaseAuth mFirebaseAuth;
-    private FirebaseAuth.AuthStateListener mAuthStateListener;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
