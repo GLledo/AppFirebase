@@ -1,5 +1,6 @@
 package com.example.gonza.appfirebase;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -48,6 +49,10 @@ public class ListaViaje extends AppCompatActivity {
         if(tipoFiltro.equals("dias")){
             String dias = getIntent().getStringExtra("filtro");
         }
+
+        //Recogemos el nombre del viaje que queremos eliminar
+        String eliViaje = getIntent().getStringExtra("eliminar");
+
 
         remitente = "ANONIMO";//TODO AQUI DEBERIA IR EL NOMBRE DEL QUE HA INICIADO LA APLICACION
 
@@ -157,5 +162,10 @@ public class ListaViaje extends AppCompatActivity {
     protected void onResume() {
         super.onResume();
         addChildEventListener();
+    }
+
+    public void volver(View v){
+        Intent i = new Intent(this,VentanaBotones.class);
+        startActivity(i);
     }
 }

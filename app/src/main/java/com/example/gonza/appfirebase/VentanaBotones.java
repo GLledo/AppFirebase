@@ -45,6 +45,8 @@ public class VentanaBotones extends AppCompatActivity {
 
     }
     public void eliminarViaje(View view) {
+        Intent i = new Intent(this,EliminarViaje.class);
+        startActivity(i);
     }
     public void salir(View view) {
 

@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".ListaViaje" />
-        <activity android:name=".InsertarViaje"></activity>
+        <activity android:name=".InsertarViaje" />
+        <activity android:name=".EliminarViaje"></activity>
     </application>
 
 </manifest>

@@ -21,4 +21,8 @@
     <string name="hint_precio">Introduce el precio</string>
     <string name="hint_duracion">Introduce la duracion</string>
     <string name="btn_AtrasListaViajes">Volver a atrás</string>
+    <string name="hint_eliminar_viaje">Nombre del viaje a eliminar</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="btn_eliminar_volver">Volver</string>
+    <string name="toast_eliminar">Introduce el nombre de un viaje para eliminarlo</string>
 </resources>
