@@ -85,7 +85,7 @@ public class ListaViaje extends AppCompatActivity {
                         //Con esto controlo que solo se muestren los viajes con los dias especificados en el getIntentIntExtra.
                        //Se pueden aplicar mas tipos de filtros, a la hora de añadir los viajes primero se comprueba
                        // que el tipod e valor coincide con los filtros establecidos.
-                       // ******* If's anidados ****************
+                       // ******* If's anidados *****************
                         datos.add(m);
                         adapter.notifyItemInserted(datos.size()-1);
                     }
