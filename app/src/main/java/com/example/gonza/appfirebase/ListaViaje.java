@@ -32,7 +32,7 @@ public class ListaViaje extends AppCompatActivity {
     MensajeAdaptador adapter;
     LinearLayoutManager llm;
     ArrayList<Viaje> datos;
-
+    String dias;
     private DatabaseReference dbR;
     private ChildEventListener cel;
 
@@ -47,7 +47,7 @@ public class ListaViaje extends AppCompatActivity {
         // RECOGEMOS EL FILTRO DE LA CONSULTA, DISEñADO PARA UNA AMPLICACIÓN
         String tipoFiltro = getIntent().getStringExtra("tipoFiltro");
         if(tipoFiltro.equals("dias")){
-            String dias = getIntent().getStringExtra("filtro");
+            dias = getIntent().getStringExtra("filtro");
         }
         //Con el string dias filtramos en la lista cuando se carguen los datos
         remitente = "ANONIMO";//TODO AQUI DEBERIA IR EL NOMBRE DEL QUE HA INICIADO LA APLICACION
@@ -77,8 +77,12 @@ public class ListaViaje extends AppCompatActivity {
                 public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                     System.out.println("Nuevo mensaje");
                     Viaje m = dataSnapshot.getValue(Viaje.class);
-                    datos.add(m);
-                    adapter.notifyItemInserted(datos.size()-1);
+
+                    if(m.getDuracion()>5) {
+                        datos.add(m);
+                        adapter.notifyItemInserted(datos.size()-1);
+                    }
+
                 }
 
                 @Override
