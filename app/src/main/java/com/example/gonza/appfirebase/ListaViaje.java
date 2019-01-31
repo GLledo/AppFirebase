@@ -80,7 +80,6 @@ public class ListaViaje extends AppCompatActivity {
                     Viaje m = dataSnapshot.getValue(Viaje.class);
                     datos.add(m);
                     adapter.notifyItemInserted(datos.size()-1);
-                }
 
                 }
 
