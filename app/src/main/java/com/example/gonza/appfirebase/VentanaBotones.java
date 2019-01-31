@@ -33,6 +33,8 @@ public class VentanaBotones extends AppCompatActivity {
 
     public void consultarTodosLosViajes(View view) {
         Intent x = new Intent(this, ListaViaje.class);
+        x.putExtra("tipoFiltro","dias");
+        x.putExtra("filtro",0);
         startActivity(x);
     }
 
