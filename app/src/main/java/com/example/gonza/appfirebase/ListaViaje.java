@@ -34,7 +34,7 @@ public class ListaViaje extends AppCompatActivity {
     LinearLayoutManager llm;
     ArrayList<Viaje> datos;
 
-    String dias="";
+    int dias=0;
 
     private DatabaseReference dbR;
     private ChildEventListener cel;
@@ -50,7 +50,7 @@ public class ListaViaje extends AppCompatActivity {
         // RECOGEMOS EL FILTRO DE LA CONSULTA, DISEñADO PARA UNA AMPLICACIÓN
         String tipoFiltro = getIntent().getStringExtra("tipoFiltro");
         if(tipoFiltro.equals("dias")){
-            dias = getIntent().getStringExtra("filtro");
+            dias = getIntent().getIntExtra("filtro",0);
         }
         //Con el string dias filtramos en la lista cuando se carguen los datos
         remitente = "ANONIMO";//TODO AQUI DEBERIA IR EL NOMBRE DEL QUE HA INICIADO LA APLICACION
@@ -81,8 +81,11 @@ public class ListaViaje extends AppCompatActivity {
                     System.out.println("Nuevo mensaje");
                     Viaje m = dataSnapshot.getValue(Viaje.class);
 
-                    if(m.getDuracion()>(Integer.parseInt(dias))){
-
+                   if(m.getDuracion()>dias){
+                        //Con esto controlo que solo se muestren los viajes con los dias especificados en el getIntentIntExtra.
+                       //Se pueden aplicar mas tipos de filtros, a la hora de añadir los viajes primero se comprueba
+                       // que el tipod e valor coincide con los filtros establecidos.
+                       // ******* If's anidados ****************
                         datos.add(m);
                         adapter.notifyItemInserted(datos.size()-1);
                     }
