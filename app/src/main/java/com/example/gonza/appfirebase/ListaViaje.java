@@ -33,6 +33,7 @@ public class ListaViaje extends AppCompatActivity {
     MensajeAdaptador adapter;
     LinearLayoutManager llm;
     ArrayList<Viaje> datos;
+    String borrarViaje;
 
     int dias=0;
 
@@ -51,9 +52,15 @@ public class ListaViaje extends AppCompatActivity {
         String tipoFiltro = getIntent().getStringExtra("tipoFiltro");
         if(tipoFiltro.equals("dias")){
             dias = getIntent().getIntExtra("filtro",0);
+        }else {
+            borrarViaje = getIntent().getStringExtra(getString(R.string.clave_eliminar));
         }
+
+
         //Con el string dias filtramos en la lista cuando se carguen los datos
         remitente = "ANONIMO";//TODO AQUI DEBERIA IR EL NOMBRE DEL QUE HA INICIADO LA APLICACION
+
+
 
       //  etMensaje = findViewById(R.id.etMensaje);
       //  btnEnviar = findViewById(R.id.btnEnviar);
@@ -80,6 +87,7 @@ public class ListaViaje extends AppCompatActivity {
                 public void onChildAdded(@NonNull DataSnapshot dataSnapshot, @Nullable String s) {
                     System.out.println("Nuevo mensaje");
                     Viaje m = dataSnapshot.getValue(Viaje.class);
+
 
                    if(m.getDuracion()>dias){
                         //Con esto controlo que solo se muestren los viajes con los dias especificados en el getIntentIntExtra.
@@ -111,8 +119,15 @@ public class ListaViaje extends AppCompatActivity {
 
                 @Override
                 public void onChildRemoved(@NonNull DataSnapshot dataSnapshot) {
-                    System.out.println("Mensaje borrado: "
-                            + dataSnapshot.getValue(Viaje.class).getDestino());
+
+                    Viaje v = dataSnapshot.getValue(Viaje.class);
+
+                    //for(int j = 0; j < datos.size(); j++){
+                        if (borrarViaje.toLowerCase().equals(v.getDestino().toLowerCase())){
+                            datos.remove(v);
+                       }
+                   // }
+
                     adapter.notifyDataSetChanged();
                 }
 
@@ -152,11 +167,12 @@ public class ListaViaje extends AppCompatActivity {
         dbR.updateChildren(mapa);
     }*/
 
-    public void borrar(View v) {
-        dbR.removeValue();
-        adapter.clear();
+  // public void borrar() {
+       // dbR.getChild(viaje.getid()).removela
+        //dbR.removeValue();
+       /// adapter.clear();
 
-    }
+   // }
 
     @Override
     protected void onPause() {

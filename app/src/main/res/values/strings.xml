@@ -25,4 +25,5 @@
     <string name="btn_eliminar">Eliminar</string>
     <string name="btn_eliminar_volver">Volver</string>
     <string name="toast_eliminar">Introduce el nombre de un viaje para eliminarlo</string>
+    <string name="clave_eliminar">Eliminar</string>
 </resources>

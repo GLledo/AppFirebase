@@ -29,7 +29,8 @@ public class EliminarViaje extends AppCompatActivity {
         }else{
 
             Intent i = new Intent(this, ListaViaje.class);
-            i.putExtra("eliminar",viajeELi);
+            i.putExtra("tipoFiltro","borrar");
+            i.putExtra(getString(R.string.clave_eliminar),viajeELi);
             startActivity(i);
         }
 
